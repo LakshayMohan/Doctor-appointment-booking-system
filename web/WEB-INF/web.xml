@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Appointment</servlet-name>
+        <servlet-class>controller.AppointmentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetAvailableDoctors</servlet-name>
+        <servlet-class>controller.GetAvailableDoctorsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndAppointment</servlet-name>
+        <servlet-class>controller.EndAppointmentServlet</servlet-class>
+    </servlet>
+       <servlet-mapping>
+        <servlet-name>Appointment</servlet-name>
+        <url-pattern>/Appointment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetAvailableDoctors</servlet-name>
+        <url-pattern>/GetAvailableDoctors</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndAppointment</servlet-name>
+        <url-pattern>/EndAppointment</url-pattern>
+    </servlet-mapping>
+</web-app>
